@@ -1,0 +1,14 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^startupsaga\.aitecell\.in$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.startupsaga\.aitecell\.in$
+RewriteRule ^/?$ "https\:\/\/www\.startupsaga\.in\/" [R=301,L]
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteCond %{HTTP_HOST} ^startupsaga\.aitecell\.in$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.startupsaga\.aitecell\.in$
+RewriteRule ^public_html\/startup\-saga$ "https\:\/\/www\.startupsaga\.in\/" [R=301,L]
+

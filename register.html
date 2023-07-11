@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Matteo Bruni">
+    <title>Alumni Record</title>
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/particles.css" rel="stylesheet"/>
+    <link href="assets/css/auth.css" rel="stylesheet"/>
+    <link href="assets/thankyou.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div id="tsparticles"></div>
+<main class="box">
+     
+
+
+    <h2>Hey, Alumni's we need your response</h2>
+    <form action="" id="contactform"> 
+        <div class="inputBox">
+            <label for="userName">FULL NAME</label>
+            <input type="text" name="userName" id="userName" placeholder="Type your full name" required/>
+        </div>
+        <div class="inputBox">
+            <label for="userPassword">WHATSAPP NUMBER</label>
+            <input type="text" name="userPassword" id="whatsapp" placeholder="Whatsapp Number"
+                   required/>
+        </div>
+        <div class="inputBox">
+            <label for="userConfirmPassword">Company Name </label>
+            <input type="text" name="userPassword" id="company" placeholder="Company Name"
+                   required/>
+        </div>
+
+        <div class="inputBox">
+            <label for="userConfirmPassword">Company Domain </label>
+            <input type="text" name="userPassword" id="domain" placeholder="Company Domain"
+                   required/>
+        </div>
+
+         <div class="inputBox">
+            <label for="userConfirmPassword">SUGGESTION FOR I&E CELL</label>
+             <input  class="suggestion" type="text" name="userPassword"  id="suggestion" placeholder="suggestion for I&E cell"
+                   required/> 
+                   Suggestion for I&E cell
+                   
+        </div>
+
+        <button type="submit" id="submit"  name="" style="float: left;">Submit</button>
+       
+    </form>
+    
+       
+        
+</main>
+<footer>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="./mail.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.1/tsparticles.min.js"
+        integrity="sha256-D6LXCdCl4meErhc25yXnxIFUtwR96gPo+GtLYv89VZo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/particles.js"></script>
+
+</body>
+
+</html>

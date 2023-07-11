@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="unnati2-assets/assets/css/formstyle.css">
+   
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+   </head>
+   
+<body>
+  <div class="container" id="cnt">
+    <div class="title">Registration For Unnati 2.0 </div>
+    <div class="content">
+
+      <form method="post" action="https://script.google.com/macros/s/AKfycbzZFLGDYODWAQfyh9bMyKWUQUHUtD6eMsh90O3Na7fEiWgvgV0MjxO5jlbc2BujR9Mz/exec" name="submit-to-google-sheet">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Team Name </span>
+            <input name="Team Name" type="text" placeholder="Enter your Team Name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Leader's Name</span>
+            <input name="Leader's Name " type="text" placeholder="Enter Leader's Name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Leader's Roll Number</span>
+            <input name="Leader Reg Number" type="number" pattern="[0-9]{4}" placeholder=" Enter Leader's Roll Number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Leader Whatsapp Number</span>
+            <input name="Leader Whatsapp Number" type="number" pattern="[0-9]{10}" placeholder="Enter your Whatsapp Number" min="6000000000" max="9999999999" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Team Leader AIT E-Mail</span>
+            <input name="Team Leader's Mail Id" type="email" placeholder="Enter Leader's E-Mail" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Team Member -1(Name, AIT Email, Roll No.)</span>
+            <input  name="Team Member 1" type="text" placeholder="Enter Details Team Member -1 " required>
+          </div>
+          <div class="input-box">
+            <span class="details">Team Member -2(Name, AIT Email, Roll No.)</span>
+            <input name="Team Member 2" type="text" placeholder="Enter Details Team Member -2" >
+          </div>
+
+          
+
+          <div class="input-box">
+            <span class="details">Referral Code(Only for E Cell members)</span>
+            <input name="Referral Code" type="number" pattern="[0-9]{5}" placeholder="Confirm your Referral Code">
+          </div>
+    
+
+          <p class="INTERBRANCH"> INTERBRANCH or Girl Team Member(MECH/ENTC/IT/COMP)</p>
+
+          <label>  
+            <input type="radio" name="Interbranch" ng-model="angularYesOrNo" id="yesOrNo"  value="yes" /> Yes</label><br />
+                     <label>
+        <input type="radio" name="Interbranch" ng-model="angularYesOrNo" id="yesOrNo"  value="no" /> No</label><br />
+            
+          </div>
+
+        </div>
+         
+<div class="bton">
+<button class="button-40" role="button" disabled>SUBMIT</button>
+</div>
+
+
+      </form>
+    </div>
+  </div>
+  
+  
+  <script src="unnati2-assets/assets/js/script.js"></script>
+   
+ 
+
+</body>
+</html>

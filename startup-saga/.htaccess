@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^aitecell.in/startup-saga/index.html/$ [OR]
+RewriteCond %{HTTP_HOST} ^https://www.aitecell.in/startup-saga/index.html$
+RewriteRule ^/?$ "https\:\/\/www\.startupsaga\.in\/" [R=301,L]
+

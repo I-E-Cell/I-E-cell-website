@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="event.css">
+     
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title> REGISTER FORM </title>
+    <style></style> 
+</head>
+<body>
+    <div class="container" >
+        <header>DECODE BRANDING <SPAN style="color:red"; >   ( SORRY WE ARE NOT ACCEPTING THE RESPONSES. )  </SPAN>  </header>
+
+        <form  method="post" name="submit-to-google-sheet" action="https://script.google.com/macros/s/AKfycbyy2xI1NCmqPp9sFkSl4sa44WTbuuj47mK0NOtY-fgCQFwOJkBs5pQXisUH7oPlqN2m4A/exec">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">TEAM DETAILS</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>LEADER'S FULL NAME <span class="error" id="nameonmrkErr" style="color: red;"></span></label>
+                            <input type="text" placeholder="Enter your name" name="Leader"  required ><!--required-->
+                            
+                        </div>
+
+                        <div class="input-field">
+                            <label> TEAM NAME <span class="error" id="genderErr" style="color: red;"></span></label>
+                            <input type="text" placeholder="Enter your Team Name" name="Teamname"  required><!--required-->
+                            
+                            
+                        </div>
+
+
+                        <div class="input-field">
+                            <label> LEADER'S AIT EMAIL ID <span class="error" id="genderErr" style="color: red;"></span></label>
+                            <input type="email" placeholder="Enter Leader's AIT  Email id" name="Leadermail"  required><!--required-->
+                            
+                            
+                        </div>
+
+                        <div class="input-field">
+                            <label> MEMBER 1 NAME </label>
+                            <input type="text" placeholder="Enter member name 1 " name="Member1"  required ><!--required-->
+                            
+                        </div>
+
+                        <div class="input-field">
+                            <label>MEMBER 1 MAIL ID  <span class="error" id="emailErr" style="color: red;"></span></label>
+                            <input type="email" placeholder="Enter member 1 mail " name="Member1Mail" required ><!--required-->
+                            
+                        </div>
+
+                        <div class="input-field">
+                            <label>MEMBER 2 NAME  <span class="error" id="mobileErr" style="color: red;"></span></label>
+                            <input type="text" placeholder="Enter member name 2" name="Member2"   ><!--required-->
+                           
+                        </div>
+
+                        <div class="input-field">
+                            <label> MEMBER 2 MAIL ID  <span class="error" id="parentsmobilenoErr" style="color: red;"></span></label>
+                            <input type="email" placeholder="Enter member 2 mail" name="Member2mail"  ><!--required-->
+                            
+                        </div>
+
+                        <div class="input-field">
+                            <label> TEAM BRAND NAME  <span class="error" id="addressErr" style="color: red;"></span></label>
+                            <input type="text" placeholder="Team Brand Name" name="Teambrand" required  ><!--required-->
+                            
+                        </div>
+
+                        <div class="input-field">
+                            <label> GOOGLE DRIVE LINK <span class="error" id="addressErr" style="color: red;"></span></label>
+                            <input type="text" placeholder="G Drive Public link of your work" name="GOOGLEDRIVE"  required ><!--required-->
+                            
+                        </div>
+
+
+                        
+                   
+
+                       
+                       
+                    </div>
+
+                   
+                </div> 
+      
+        
+                <button   id="submit"      class="nextBtn" disabled > CLOSED
+
+            
+                </button>
+                
+
+               
+                
+ 
+                <a class="btn btn-primary" href="https://i-e-cell.github.io/WEEKLY-EVENT/" role="button" style="height:40px;width:200px" >VIEW EXAMPLES</a>
+
+                   <a class="btn btn-primary" href="https://drive.google.com/file/d/1Gx97gfSH_xzYKcdG8St4g-MoeyZGhQGP/view?usp=sharing" role="button" style="height:40px;width:200px" >RULEBOOK</a>
+           
+       
+            </div>
+           
+                    </div>
+                </div> 
+            </div>
+        </form>
+
+        
+
+    </div>
+
+    <script>
+        const scriptURL='https://script.google.com/macros/s/AKfycbyy2xI1NCmqPp9sFkSl4sa44WTbuuj47mK0NOtY-fgCQFwOJkBs5pQXisUH7oPlqN2m4A/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        
+        form.addEventListener('submit',e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(function(){
+                return goHome();
+            })
+            
+            
+            .catch(error => console.error('Error!', error.message))
+            
+        })
+        
+       function goHome()
+         {
+
+          alert("Your Response was Recorded");
+          document.location.href = "https://www.aitecell.in/thankyou.html";
+
+         }
+    </script>
+
+
+    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="script.js"></script>
+    
+   
+    
+
+</body>
+</html>
