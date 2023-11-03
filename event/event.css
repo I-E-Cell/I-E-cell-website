@@ -59,7 +59,7 @@ body{
     margin-top: 16px;
     min-height: 350px;
     background-color: #fff;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .container form .form{
     position: absolute;
@@ -166,7 +166,7 @@ form .buttons button , .backBtn{
     margin-right: 14px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 990px) {
     .container form{
         overflow-y: scroll;
     }
