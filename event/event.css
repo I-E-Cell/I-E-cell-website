@@ -13,7 +13,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(ecell.gif);
+    background-repeat: no-repeat;
+    background-image: url(/assets/css/EventBG.png);
     
     
 }
@@ -23,7 +24,7 @@ body{
 .container{
     background-color: white;
     color: #fff;
-    opacity: .8;
+    opacity: .9;
     position: relative;
     max-width: 900px;
     width: 100%;
