@@ -206,3 +206,9 @@ form .buttons button , .backBtn{
     max-width: 98%;
 }
  
+@media (max-width: 432px) {
+    .botn{
+        position: relative;
+       margin-top: 10px;
+    }
+}
