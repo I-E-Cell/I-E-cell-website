@@ -198,4 +198,11 @@ form .buttons button , .backBtn{
     }
 }
 
+
+.thankyou{
+    color: #2e2e2e;
+    font-size: 2em;
+    padding-top: 15px;
+    max-width: 98%;
+}
  
